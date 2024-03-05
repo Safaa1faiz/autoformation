@@ -14,35 +14,35 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+
+// // Route::get('/blog', function (Request $request) {
+// //     return [
+
+// //         "name" => $request ->all(),
+// //         // "name" => $request ->url(),
+// //         // "name" => $request ->path(),
+// //         "article" => "Article 1"
+// //     ];
+// // });
 
 
 // Route::get('/blog', function (Request $request) {
 //     return [
-
-//         "name" => $request ->all(),
-//         // "name" => $request ->url(),
-//         // "name" => $request ->path(),
-//         "article" => "Article 1"
+//         "name" => $request -> input('name', 'Safaa faiz')
 //     ];
 // });
 
 
-Route::get('/blog', function (Request $request) {
-    return [
-        "name" => $request -> input('name', 'Safaa faiz')
-    ];
-});
+// Route::get('/blog/{slug}-{id}', function(string $slug, string $id) {
+//     return [
+//         "slug" => $slug,
+//          "id"  => $id
 
-
-Route::get('/blog/{slug}-{id}', function(string $slug, string $id) {
-    return [
-        "slug" => $slug,
-         "id"  => $id
-
-    ];
-});
+//     ];
+// });
 
 
